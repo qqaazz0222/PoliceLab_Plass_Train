@@ -75,7 +75,7 @@ def labeling_video(file):
         ret, frame = video.read()
         if ret:
             print(f" - [현재 시간] : {cur_time}")
-            text = f"{cur_time} / {video_time}"
+            text = f"time: {cur_time} / {video_time}, frame: {cur_frame}"
             org = (50,100)
             fontFace = cv2.FONT_HERSHEY_SIMPLEX
             fontScale = 2
